@@ -69,3 +69,14 @@
 
 # collatz(793681)
 
+def solution(a)
+  ans = 0
+  for i in 1 .. (a.length - 1)
+      if ans > a[i]
+          ans = a[i]
+      end
+  end
+  return ans
+end
+
+p solution([-1, 1, -2, 2])
