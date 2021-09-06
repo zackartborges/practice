@@ -16,4 +16,5 @@ console.log(result);
 
   return 1;
 }
-console.log(findNumber([1,3,6,4,1,2]));
+
+// console.log(findNumber([1,3,6,4,1,2]));
