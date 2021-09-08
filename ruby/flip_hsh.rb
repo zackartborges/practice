@@ -1,8 +1,7 @@
 # Given a hash, create a new hash that has the keys and values switched.
-# Output: {1 => "a", 2 => "b", 3 => "c"}
 
-# flipping keys and values in hash
-
+input= {"a" => 1, "b" => 2, "c" => 3}
+output= {1 => "a", 2 => "b", 3 => "c"}
 # while loop through hash inverting the hash
 
 # create new hash, 
@@ -18,26 +17,7 @@
 # set placeholder equal to value
 # map method to loop through array , grabbing k, v
 
-input = {"a" => 1, "b" => 2, "c" => 3}
+# input = {"a" => 1, "b" => 2, "c" => 3}
+p input.map {|k,v| p v,k}.to_h
 
-# "a" => 1 
-#  k     v
-
-
-#  placeholder = k
-# v = k 
-
-# hash[v] = placeholder
-
-# 1 => "a"
-
-input.each do |pair|
- # : "a" => 1
-  new_hash = pair.map! {|k,v| [v,k] }.to_h
-
-  
-
-end
-
-
-p new_hash
+# p new_hash

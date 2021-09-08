@@ -2,7 +2,7 @@
 
 let posts = [
   {title: 'Me Eating Pizza', submitted_by: 231, likes: 1549},
-// post[0][1]
+  // post[0][1]
 
   {title: 'i never knew how cool i was until now', submitted_by: 989, likes: 3},
   {title: 'best selfie evar!!!', submitted_by: 111, likes: 1092},
@@ -45,3 +45,5 @@ console.log(posts);
 //   {title: 'best selfie evar!!!', submitted_by: "Patti Q.", likes: 1092},
 //   {title: 'Mondays are the worst', submitted_by: "Aunty Em", likes: 644}
 // ]
+
+
