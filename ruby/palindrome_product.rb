@@ -54,19 +54,32 @@
 #  p product
 # else
 # p end
+# def is_palindrome(product)
+#   if product.to_s === product.to_s.reverse
+#     return product
+#   else
+#     return "#{product} is not a palindrome"
+# end
 
 def largest_palindrome
   index_one = 999
-  index_two = 998
+  index_two = 999
   palindromes = []
-  # one hundred times do: multiply index one by index two and determine if there is a palindrome. 
-  while index_two < index_one - 10 #while 998 > 989
-    product = index_one * index_two
-    if product.to_i == product.to_i.reverse
-      palindromes << product
-      index_two = index_two - 1
-    else
-      index_two = index_two - 1
+  # product = 0
+  counter = 0
+  while index_one >= 100
+    index_two = index_one
+    while index_two >= 100
+      product = index_one * index_two
+
+        if product.to_s === product.to_s.reverse
+          palindromes << product
+        end
+      index_two -= 1
     end
+    index_one -=1
   end
+  p palindromes.max
 end
+
+puts largest_palindrome
