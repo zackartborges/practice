@@ -61,6 +61,8 @@ c = a + b
       c = a + b
       a = b 
       b = c    
+      p a 
+      p b
     end
     p c 
   end
